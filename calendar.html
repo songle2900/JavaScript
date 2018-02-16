@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var date = new Date();      // Create Date object
+        var y = date.getFullYear(); // Current Year
+        var m = date.getMonth();    // Current Month
+        var d = date.getDate();     // Current Day
+
+        // Get the day of current month of date.
+        var theDate = new Date(y, m, 1);
+        var theDay = theDate.getDay();
+
+        // Store days from Jan to Dec into array called "last" 
+        var last = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+        
+        if(y % 4 == 0 && y % 100 != 0 || y % 400 == 0) {
+            lastDate = last[1]=29;
+        };
+
+        // Figure out the last day of current month
+        var lastDate = last[m]; 
+
+        var row = Math.ceil((theDay + lastDate) / 7);
+
+        document.write("<h1>" + y + ". " + (m + 1) + ". " + d + "</h1>");
+        var calendar = "<table border='1'>";
+        calendar += "<tr>";
+        calendar += "<th>Sunday</th>";
+        calendar += "<th>Monday</th>";
+        calendar += "<th>Tuesday</th>";
+        calendar += "<th>Wednesday</th>";
+        calendar += "<th>Thursday</th>";
+        calendar += "<th>Friday</th>";
+        calendar += "<th>Saturday</th>";
+        calendar += "</tr>";
+
+        var dNum = 1; // Initial value for calendar
+
+        // Creating table for calendar
+        for(var i = 1; i <= row; i++) {
+            calendar += "<tr>";
+
+            for(var k = 1; k <= 7; k++) {
+                if(i == 1 && k <= theDay || dNum > lastDate) {
+                    calendar += "<td> &nbsp; </td>";
+                } else {
+                    calendar += "<td>" + dNum + "</td>";
+                    dNum++;
+                }
+            }
+
+            calendar += "</tr>";
+        }
+
+        document.write(calendar);
+    </script>
+</head>
+<body>
+</body>
+</html>
