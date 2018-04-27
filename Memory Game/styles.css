@@ -1,0 +1,20 @@
+
+div#memory_board{
+	background:white;
+	border:white 1px solid;
+	width:540px;
+	height:540px;
+	padding:10px;
+	margin:0px auto;
+}
+div#memory_board > div{
+	background: url(back1.jpg) no-repeat;
+	border:#000 1px solid;
+	width:90px;
+	height:90px;
+	float:left;
+	padding:20px;
+	font-size:64px;
+	cursor:pointer;
+	text-align:center;
+}
