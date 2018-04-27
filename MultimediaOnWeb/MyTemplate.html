@@ -1,0 +1,54 @@
+<!doctype html>
+<!--Young Min, Song -->
+<html lang = "en">
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+</head>
+	<input type="button" value="Play Video" onclick="video()">
+	<input type="button" value="Play Flash" onclick="flash()">
+	<input type="button" value="Play Sound" onclick="sound()">
+	<input type="button" value="Play Youtube" onclick="youtube()">
+	<p id = "p1"></p>
+	<a href
+</html>
+
+<script>
+
+function video()
+{
+	var par = document.getElementById("p1");
+	var vid = document.createElement("video");
+	vid.src = "video.mp4";
+	vid.width = "320";
+	vid.height = "176";
+	vid.autoplay = true;
+	par.appendChild(vid);
+}
+
+function flash()
+{
+	var par = document.getElementById("p1");
+	var fla = document.createElement("object");
+	fla.data = "flash.swf";
+	fla.width = "320";
+	fla.height = "176";
+	par.appendChild(fla);
+}
+
+function sound()
+{
+	var snd = new Audio("sound.mp3");
+	snd.play();
+}
+
+function youtube()
+{
+	var par = document.getElementById("p1");
+	var yout = document.createElement("iframe");
+	yout.width = "420";
+	yout.height = "345";
+	yout.src = "https://www.youtube.com/embed/BCr7y4SLhck";
+	par.appendChild(yout);
+}
+</script>
