@@ -16,3 +16,4 @@ const y = [...x];
 console.log(y);
 const z = y.join('')
 console.log(z);
+console.log(z);
