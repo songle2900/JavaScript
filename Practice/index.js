@@ -1,69 +1,51 @@
-// const eric = {
-//   name: "Eric",
-//   age: 28,
-//   gender: "Male",
-//   favMov: ["Lord of the Ring", "Avengers", "Iron Man"],
-//   family: [
-//     {
-//       name: "Carol",
-//       status: "girlfriend",
-//       family1: ["Josh", "Jessica"]
-//     },
-//     {
-//       name: "Kwangseok",
-//       status: "Dad"
-//     }
-//   ]
-// };
+// --- Examples
+// chunk([1, 2, 3, 4], 2) --> [[ 1, 2], [3, 4]]
+// chunk([1, 2, 3, 4, 5], 2) --> [[ 1, 2], [3, 4], [5]]
+// chunk([1, 2, 3, 4, 5, 6, 7, 8], 3) --> [[ 1, 2, 3], [4, 5, 6], [7, 8]]
+// chunk([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
+// chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 
-// console.log("Who is carol's brother: " + eric.family[0].family1[0]);
-// console.log("What is Eric's gender: " + eric.gender);
-// console.log("Carol is Eric's " + eric.family[0].status);
-// console.log(
-//   eric.family[1].name + " is " + eric.name + "'s " + eric.family[1].status
-// );
 
-// // 1
-// const func = x => {
-//   if (x < 5) {
-//     const func1 = y => {
-//       for (let i = 1; i <= y; i++) {
-//         console.log("hello!");
-//       }
-//     };
-//     func1(x);
-//   }
-// };
-// func(4);
 
-// // 2
-// const func2 = x => `Hello, ${x}`;
-// func2("Eric");
+// --- Example
+//   fizzBuzz(5);
+//   1
+//   2
+//   fizz
+//   4
+//   buzz
 
-// // 3
-// const arr = ["Eric", "Carol", "Henry"];
 
-// const func3 = name => {
-//   for (let i = 0; i < name.length; i++) {
-//     console.log("Hello, " + name[i]);
-//   }
-// };
-// func3(arr);
 
-// const greetEric = (name, age) => `Hello, ${name}! You are ${age} years old`;
+// --- Examples
+// maxChar("abcccccccd") === "c"
+// maxChar("apple 1231111") === "1"
 
-// console.log(greetEric("Eric", 28));
 
-// const calculator = {
-//     plus: (x, y) => {
-//         return x + y;
-//     }
-// }
 
-// //           console.log(greetEric);
-// const plus = calculator.plus(5, 5);
+// --- Examples:
+//   palindrome("abba") === true
+//   palindrome("abcdefg") === false
 
-const arr1 = [1, 2, 3, 4, 5, 6, 7];
-const arr2 = [1, 2, 3, 4, 5, 6, 7];
-// const arr3 = [1, 2, 3, 4, 5, 6, 7];
 
+
+// --- Examples
+//   reverseInt(15) === 51
+//   reverseInt(981) === 189
+//   reverseInt(500) === 5
+//   reverseInt(-15) === -51
+//   reverseInt(-90) === -9
+
+
+
+// --- Examples
+//   reverse('apple') === 'leppa'
+//   reverse('hello') === 'olleh'
+//   reverse('Greetings!') === '!sgniteerG'
+
+
+
+// --- Examples
+//   anagrams('rail safety', 'fairy tales') --> True
+//   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
+//   anagrams('Hi there', 'Bye there') --> False
