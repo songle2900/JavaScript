@@ -7,7 +7,6 @@
 
 
 
-
 // --- Example
 //   fizzBuzz(5);
 //   1
@@ -15,21 +14,8 @@
 //   fizz
 //   4
 //   buzz
-const fizzBuzz = (n) => {
-    for (let i = 1; i <= n; i++) {
-        if (i % 15 === 0) {
-            console.log('FizzBuzz');
-        } else if (i % 5 === 0) {
-            console.log('Buzz');
-        } else if (i % 3 === 0) {
-            console.log('Fizz');
-        } else {
-            console.log(i);
-        };
-    };
-};
 
-fizzBuzz(15);
+
 
 // --- Examples
 // maxChar("abcccccccd") === "c"
@@ -63,3 +49,13 @@ fizzBuzz(15);
 //   anagrams('rail safety', 'fairy tales') --> True
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
+
+// array.map((요소, 인덱스, 배열) => { return 요소 });
+const arr = [1, 2, 3, 4];
+
+const arr2 = arr.map((elem, index, arr) => {
+   return elem + 1;
+});
+
+
+console.log(arr2);
